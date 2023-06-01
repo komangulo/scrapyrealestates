@@ -5,11 +5,11 @@ def insert_host_mongodb(db_client, db_name, db_col, data_host, logger):
     db = db_client[db_name]  # creem la connexio amb la bbdd de mongodb
     col = db[db_col]  # creem una colecció amb el nom de la població
     col.insert_one({"id": data_host['id'],
-                      "chat_id": data_host['chat_id'],
-                      "group_name": data_host['group_name'],
+                      "chat_id": data_host['1001326807210'],
+                      "group_name": data_host['CasasMadrid'],
                       "time_refresh": data_host['refresh'],
-                      "min_price": data_host['min_price'],
-                      "max_price": data_host['max_price'],
+                      "min_price": data_host['60000'],
+                      "max_price": data_host['110000'],
                       "urls": data_host['urls'],
                       "so": data_host['so'],
                       "host_name": data_host['host_name'],
